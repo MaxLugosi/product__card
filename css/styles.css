@@ -1,0 +1,471 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Roboto-Medium", "Arial", "sans-serif";
+  font-weight: 500;
+}
+
+.line-right {
+  border-right: 1px solid #F0EEEB;
+  margin: 24px 0 24px 0;
+}
+
+.line-bottom {
+  border-bottom: 2px solid #000;
+}
+
+.line-top {
+  border-top: 2px solid #000;
+}
+
+.main {
+  background-color: #E5E5E5;
+}
+
+.container {
+  padding: 40px 120px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+.product-card:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.product-card__photo {
+  position: relative;
+  width: 10%;
+  margin: 34px 78px 30px 20px;
+}
+.product-card__features {
+  position: relative;
+  width: 60%;
+  padding-top: 24px;
+}
+.product-card__features-title {
+  margin-bottom: 5px;
+  font-family: "Roboto-Bold", "Arial", "sans-serif";
+  font-weight: 700;
+}
+.product-card__features-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.product-card__features-data .floor:before {
+  content: "Этаж";
+  display: block;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989691;
+  padding-top: 8px;
+}
+.product-card__features-data .total-area:before {
+  content: "Общая площадь";
+  display: block;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989691;
+  padding-top: 8px;
+}
+.product-card__features-data .ceiling-height {
+  grid-column: 2;
+  grid-row: 1;
+}
+.product-card__features-data .ceiling-height:before {
+  content: "Высота потолков";
+  display: block;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989691;
+  padding-top: 8px;
+}
+.product-card__features-data .living-space:before {
+  content: "Жилая площадь";
+  display: block;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989691;
+  padding-top: 8px;
+}
+.product-card__features-data .trim {
+  grid-column: 3;
+  grid-row: 1;
+}
+.product-card__features-data .trim:before {
+  content: "Отделка";
+  display: block;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989691;
+  padding-top: 8px;
+}
+.product-card__features-data .kitchen-area:before {
+  content: "Площадь кухни";
+  display: block;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #989691;
+  padding-top: 8px;
+}
+.product-card__features-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin-top: 15px;
+  width: 65%;
+  font-size: 12px;
+  line-height: 32px;
+  text-align: center;
+}
+.product-card__features-info .info-green {
+  background-color: #F2FAF0;
+  width: 184px;
+  max-height: 32px;
+  border-radius: 22px;
+  color: #64B851;
+}
+.product-card__features-info .info-red {
+  background-color: #FAF0F0;
+  width: 249px;
+  max-height: 32px;
+  border-radius: 22px;
+  color: #EB4B51;
+}
+.product-card__price {
+  position: relative;
+  width: 30%;
+  margin: 24px 32px 24px 31px;
+}
+.product-card__price-title {
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #989691;
+}
+.product-card__price-title .date {
+  font-family: "Roboto-Medium", "Arial", "sans-serif";
+  font-weight: 500;
+  color: #2794DB;
+}
+.product-card__price-main {
+  color: #383736;
+  font-family: "Roboto-Bold", "Arial", "sans-serif";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.product-card__price-txt {
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+  color: #989691;
+}
+.product-card__price-txt .cost {
+  font-family: "Roboto-Medium", "Arial", "sans-serif";
+  font-weight: 500;
+  color: #EB4B51;
+}
+.product-card__price-btn {
+  background-color: #FAC62D;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #383736;
+  border: none;
+  width: 100%;
+  height: 44px;
+  outline: none;
+}
+.product-card__price-btn:hover {
+  cursor: pointer;
+  background-color: #F0B505;
+}
+.product-card__price-btn:active {
+  background-color: #E1AB08;
+}
+.product-card__btn-close {
+  position: absolute;
+  right: 20.56px;
+  top: 20.56px;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  outline: none;
+}
+.product-card__btn-close:hover {
+  background-color: #F5F4F2;
+  width: 28px;
+  height: 28px;
+}
+.product-card__btn-close:active {
+  background-color: #E7E4DE;
+}
+.product-card__btn-close:after {
+  content: "";
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 2px;
+  left: 13px;
+  height: 24px;
+  width: 2px;
+  background-color: #C4C4C4;
+  margin: 0 auto;
+}
+.product-card__btn-close:before {
+  content: "";
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 13px;
+  height: 24px;
+  width: 2px;
+  background-color: #C4C4C4;
+  margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+  .product-card__features {
+    width: 50%;
+  }
+  .product-card__features-data {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-card__features-data .floor:before {
+    content: "Этаж";
+    display: block;
+    font-family: "Roboto-Regular", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+    padding-top: 8px;
+  }
+  .product-card__features-data .total-area {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .product-card__features-data .total-area:before {
+    content: "Общая площадь";
+    display: block;
+    font-family: "Roboto-Regular", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+    padding-top: 8px;
+  }
+  .product-card__features-data .ceiling-height {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .product-card__features-data .ceiling-height:before {
+    content: "Высота потолков";
+    display: block;
+    font-family: "Roboto-Regular", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+    padding-top: 8px;
+  }
+  .product-card__features-data .living-space {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .product-card__features-data .living-space:before {
+    content: "Жилая площадь";
+    display: block;
+    font-family: "Roboto-Regular", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+    padding-top: 8px;
+  }
+  .product-card__features-data .trim {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .product-card__features-data .trim:before {
+    content: "Отделка";
+    display: block;
+    font-family: "Roboto-Regular", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+    padding-top: 8px;
+  }
+  .product-card__features-data .kitchen-area {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .product-card__features-data .kitchen-area:before {
+    content: "Площадь кухни";
+    display: block;
+    font-family: "Roboto-Regular", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+    padding-top: 8px;
+  }
+  .product-card__features-info {
+    display: inline-block;
+    margin-top: 3px;
+  }
+  .product-card__features-info .info-green {
+    margin-bottom: 5px;
+  }
+  .product-card__features-info .info-red {
+    margin-bottom: 5px;
+  }
+
+  .product-card__price {
+    width: 40%;
+  }
+}
+@media (max-width: 920px) {
+  .container {
+    padding: 40px 28px;
+  }
+
+  .product-card__price-title, .product-card .product-card__price-txt {
+    font-size: 14px;
+  }
+  .product-card__price-btn {
+    width: 268px;
+  }
+}
+@media (max-width: 768px) {
+  .product-card {
+    display: inline-block;
+    width: 100%;
+  }
+  .product-card__photo {
+    float: left;
+    width: 18%;
+  }
+  .product-card__features {
+    width: 82%;
+  }
+  .product-card__features-info {
+    display: grid;
+    width: auto;
+  }
+  .product-card__price {
+    width: auto;
+  }
+  .product-card__price-btn {
+    width: 100%;
+  }
+  .product-card .line-right {
+    display: none;
+  }
+}
+@media (max-width: 721px) {
+  .product-card__features-info {
+    display: inline-block;
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    padding: 40px 8px;
+    margin: 0 auto;
+  }
+
+  .product-card__photo {
+    float: none;
+    width: 100%;
+    margin: 16px 63px;
+  }
+  .product-card__features {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    padding: 40px 8px;
+    margin: 0 auto;
+  }
+
+  .product-card__photo {
+    float: none;
+    width: 100%;
+    margin: 16px 63px;
+  }
+  .product-card__features {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .product-card__features-info {
+    display: inline-block;
+  }
+  .product-card__price {
+    width: 100%;
+  }
+  .product-card__price-btn {
+    width: 80%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+@media (max-width: 920px) {
+  .container {
+    padding: 40px 28px;
+  }
+
+  .product-card__price-title, .product-card .product-card__price-txt {
+    font-size: 14px;
+  }
+  .product-card__price-btn {
+    width: 268px;
+  }
+}/*# sourceMappingURL=920px.css.map */

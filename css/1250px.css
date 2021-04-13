@@ -1,0 +1,19 @@
+@media (max-width: 1250px) {
+  .product-card__features {
+    width: 50%;
+  }
+  .product-card__features-data {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-card__features-info {
+    display: inline-block;
+    margin-top: 7px;
+  }
+  .product-card__features-info-green {
+    margin-bottom: 8px;
+  }
+
+  .product-card__price {
+    width: 40%;
+  }
+}/*# sourceMappingURL=1250px.css.map */

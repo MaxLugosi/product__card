@@ -1,0 +1,105 @@
+@media(max-width: 1250px) {
+    .product-card__features {
+        width: 50%;
+        &-data {
+            grid-template-columns: 1fr 1fr;
+            .floor { 
+              
+                &:before {
+                    content: 'Этаж'; 
+                    display: block;
+                    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+                    font-weight: 400;      
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $features-before;
+                    padding-top: 8px;        
+                }
+            }
+            .total-area {
+                grid-column: 1;
+                grid-row: 2;
+                &:before {
+                    content: 'Общая площадь'; 
+                    display: block;
+                    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+                    font-weight: 400;      
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $features-before;
+                    padding-top: 8px;        
+                } 
+            }
+            .ceiling-height {
+                grid-column: 2;
+                grid-row: 1;
+                &:before {
+                    content: 'Высота потолков'; 
+                    display: block;
+                    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+                    font-weight: 400;      
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $features-before;
+                    padding-top: 8px;        
+                } 
+            }
+            .living-space {
+                grid-column: 1;
+                grid-row: 3;
+                &:before {
+                    content: 'Жилая площадь'; 
+                    display: block;
+                    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+                    font-weight: 400;      
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $features-before;
+                    padding-top: 8px;        
+                }  
+            }
+            .trim {
+                grid-column: 2;
+                grid-row: 2;
+                &:before {
+                    content: 'Отделка'; 
+                    display: block;
+                    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+                    font-weight: 400;      
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $features-before;
+                    padding-top: 8px;        
+                }  
+            }
+            .kitchen-area {
+                grid-column: 2;
+                grid-row: 3;
+                &:before {
+                    content: 'Площадь кухни'; 
+                    display: block;
+                    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+                    font-weight: 400;      
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: $features-before;
+                    padding-top: 8px;        
+                }  
+            }
+        }
+        &-info {
+            display: inline-block;
+            margin-top: 3px;
+            .info-green {
+                margin-bottom: 5px;
+            }
+            .info-red {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .product-card__price {
+        width: 40%;
+    }
+  
+}

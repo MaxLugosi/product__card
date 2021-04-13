@@ -1,0 +1,28 @@
+@media(max-width: 320px) {
+    .container {
+        padding: 40px 8px;
+        margin: 0 auto;
+    }
+    .product-card {
+
+        &__photo {
+            float: none;
+             width: 100%;
+             margin: 16px 63px;
+        }
+        &__features {
+            width: 100%;
+            padding: 1.5rem;
+            &-info {
+                display: inline-block;
+
+            }
+        }
+        &__price {
+            width: 100%;
+            &-btn {
+                width: 80%;
+            }
+        }
+    }
+}

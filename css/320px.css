@@ -1,0 +1,25 @@
+@media (max-width: 320px) {
+  .container {
+    padding: 40px 8px;
+    margin: 0 auto;
+  }
+
+  .product-card__photo {
+    float: none;
+    width: 100%;
+    margin: 16px 63px;
+  }
+  .product-card__features {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .product-card__features-info {
+    display: inline-block;
+  }
+  .product-card__price {
+    width: 100%;
+  }
+  .product-card__price-btn {
+    width: 80%;
+  }
+}/*# sourceMappingURL=320px.css.map */

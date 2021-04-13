@@ -1,0 +1,9 @@
+@media (max-width: 923px) {
+  .product-card__price-title, .product-card__price-txt {
+    font-size: 11px;
+  }
+
+  .product-card__price-btn {
+    width: 200px;
+  }
+}/*# sourceMappingURL=923px.css.map */
